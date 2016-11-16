@@ -2,6 +2,8 @@
 <head>
     <title>Spotify API</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
 </head>
 <body>
 
@@ -21,9 +23,25 @@
                 <input type="text" id="track-input"><br>
                 <input id="addTrack" type="submit" value="Submit" class="btn btn-default">
             </form>
+            <button type="button" class="btn btn-default" id="nextTrack">Next Track</button>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-12" id="albumCover"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" id="soundBar"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" id="songName"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" id="artistName"></div>
+    </div>
     <div class="row">
         <div class="col-md-12" id="trackView"></div>
     </div>
@@ -32,6 +50,7 @@
 
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="spotify.js"></script>
+
 
 </body>
 </html>
